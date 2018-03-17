@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Merci</title>
     <%= csrf_meta_tags %>
@@ -10,22 +10,25 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+
+    <!-- Navigation -->
     <%= render "layouts/shared/nav-bar" %>
     <!-- Page Header -->
-    <%= render "layouts/shared/header" %>
-
-    <!-- Main Content -->
-    <div class="">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto col-sm-12">
-          <%= yield %>
+    <%= yield :post_header %>
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <%= yield %>
+          </div>
         </div>
       </div>
-    </div>
+    </article>
 
     <hr>
     <%= render "layouts/shared/footer" %>
   </body>
+
 </html>
