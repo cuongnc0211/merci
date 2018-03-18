@@ -1,0 +1,3 @@
+default:
+  post_thumb: "/images/post_thumb_default.jpg"
+  home_background: "/images/home-background.jpg"

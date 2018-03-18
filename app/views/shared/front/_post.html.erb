@@ -1,0 +1,14 @@
+<div class="post-preview">
+  <%= link_to post_path(post) do %>
+    <h2 class="post-title">
+      <%= post.title %>
+    </h2>
+    <h3 class="post-subtitle">
+      <%= post.content.truncate 50 %>
+    </h3>
+  <% end %>
+  <p class="post-meta">Created by
+    <a href="https://www.facebook.com/cuongnguyenfu0211" target="_blank">Merci Nguyen</a>
+    <%= post.created_at %></p>
+</div>
+<hr>
