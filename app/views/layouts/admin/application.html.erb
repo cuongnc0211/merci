@@ -12,14 +12,15 @@
   </head>
 
   <body>
-    <%= render "layouts/shared/nav-bar" %>
-    <!-- Page Header -->
-    <%= render "layouts/shared/header" %>
+    <%= render "layouts/shared/admin/nav-bar" %>
 
     <!-- Main Content -->
     <div class="">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto col-sm-12">
+        <div class="col-md-2">
+          <%= render "layouts/shared/admin/side-nav-bar" %>
+        </div>
+        <div class="col-md-10">
           <%= yield %>
         </div>
       </div>

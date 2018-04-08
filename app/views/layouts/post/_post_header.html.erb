@@ -5,7 +5,7 @@
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-heading">
           <h1><%= post.title %></h1>
-          <h2 class="subheading"><%= post.content.truncate 20 %></h2>
+          <h2 class="subheading"><%= raw post.content.truncate(20) %></h2>
           <span class="meta">Posted by
             <a href="https://www.facebook.com/cuongnguyenfu0211" target="_blank">Merci Nguyen</a>
             on <%= post.created_at %></span>
