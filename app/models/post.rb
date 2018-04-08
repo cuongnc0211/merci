@@ -1,6 +1,9 @@
 class Post < ApplicationRecord
+  mount_uploader :thumb_nail, ThumbnailUploader
 
   def thumb_url
-    self.thumb_nail.nil? ? Settings.default.post_thumb : self.thumb_nail
+    thumb_nail.blank? ? Settings.default.post_thumb : thumb_nail
   end
+
+  POST_ATRRIBUTES = [:title, :thumb_nail, :content, :category_id]
 end

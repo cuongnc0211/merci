@@ -14,3 +14,4 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 Rails.application.config.assets.paths += Dir["#{Rails.root}/vendor/assets/*"].sort_by { |dir| -dir.size }
 Rails.application.config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+Rails.application.config.assets.precompile += %w( ckeditor/*)
