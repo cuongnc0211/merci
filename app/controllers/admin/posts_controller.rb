@@ -36,7 +36,7 @@ class Admin::PostsController < Admin::BaseController
   end
 
   def index
-    @posts = Post.all.order created: :desc
+    @posts = Post.all.includes(:category).order created_at: :desc
   end
 
   private

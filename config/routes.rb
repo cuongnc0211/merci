@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   namespace :admin do
     root "dash_board#index"
     resources :posts, except: :show
+    resources :categories, except: :show
   end
 end
