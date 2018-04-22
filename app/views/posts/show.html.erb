@@ -1,7 +1,7 @@
 <%= content_for :post_header do %>
   <%= render "layouts/post/post_header", post: @post %>
 <% end %>
-<h2>Show</h2>
+<h3><%= @post.title %></h3>
 <article class="post_content">
   <%= simple_format @post.content %>
 </article>
