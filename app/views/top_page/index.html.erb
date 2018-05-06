@@ -1,5 +1,9 @@
-<%= render partial: "shared/front/post", collection: @posts, as: :post %>
-<!-- Pager -->
-<div class="clearfix">
-  <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+<div class="top_page_posts_container">
+  <div class="posts">
+    <%= render partial: "shared/front/post", collection: @posts, as: :post %>
+  </div>
+  <!-- Pager -->
+  <div id="pagination" class="clearfix">
+    <%= paginate @posts, remote: true %>
+  </div>
 </div>
