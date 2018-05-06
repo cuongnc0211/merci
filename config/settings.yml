@@ -1,6 +1,12 @@
 default:
   post_thumb: "/images/post_thumb_default.jpg"
   home_background: "/images/home-background.jpg"
+  url:
+    fb: https://www.facebook.com/cuongnguyenfu0211
+    tweeter: https://twitter.com/chicuongnguyen5?lang=en
+    github: https://github.com/cuongnc0211
   admin:
     post:
       truncate: 20
+paginate:
+  top_page: 6

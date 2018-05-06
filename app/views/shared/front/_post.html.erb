@@ -4,7 +4,7 @@
       <%= post.title %>
     </h2>
     <h3 class="post-subtitle">
-      <%= post.content.truncate 50 %>
+      <%= ActionView::Base.full_sanitizer.sanitize(post.content).truncate 180 %>
     </h3>
   <% end %>
   <p class="post-meta">Created by
