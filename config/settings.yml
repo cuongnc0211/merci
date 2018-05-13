@@ -9,4 +9,5 @@ default:
     post:
       truncate: 20
 paginate:
+  default: 8
   top_page: 6

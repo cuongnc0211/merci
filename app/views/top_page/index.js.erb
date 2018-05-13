@@ -1,2 +1,2 @@
-$('.posts').html("<%= j render partial: 'shared/front/post', collection: @posts, as: :post %>")
+$('.top_page_posts_container .posts').html("<%= j render partial: 'shared/front/post', collection: @posts, as: :post %>")
 $(".top_page_posts_container #pagination").html("<%= j paginate @posts, remote: true %>");

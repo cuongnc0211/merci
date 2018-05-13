@@ -1,0 +1,2 @@
+$('.show_category_container .posts').html("<%= j render partial: 'shared/front/post', collection: @posts, as: :post %>")
+$(".show_category_container #pagination").html("<%= j paginate @posts, remote: true %>");

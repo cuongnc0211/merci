@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root "top_page#index"
 
   resources :posts, only: :show
+  resources :categories, only: :show
 
   namespace :admin do
     root "dash_board#index"

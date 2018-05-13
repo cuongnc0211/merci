@@ -3,6 +3,11 @@ class Admin::PostsController < Admin::BaseController
 
   def new
     @post = Post.new
+    @categories = Category.all
+  end
+
+  def edit
+    @categories = Category.all
   end
 
   def create

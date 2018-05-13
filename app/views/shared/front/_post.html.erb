@@ -7,8 +7,11 @@
       <%= ActionView::Base.full_sanitizer.sanitize(post.content).truncate 180 %>
     </h3>
   <% end %>
-  <p class="post-meta">Created by
+  <p class="post-meta">
+    <span> Created by
     <a href="https://www.facebook.com/cuongnguyenfu0211" target="_blank">Merci Nguyen</a>
-    <%= post.created_at %></p>
+    <%= post.created_at %> | </span>
+    <span><%= link_to post.category_name, category_path(post.category) %></span>
+  </p>
 </div>
 <hr>

@@ -4,6 +4,8 @@ class Post < ApplicationRecord
   mount_uploader :thumb_nail, ThumbnailUploader
   belongs_to :category
 
+  delegate :name, to: :category, prefix: true, allow_nil: true
+
   def to_param
     "#{title}".parameterize
   end
