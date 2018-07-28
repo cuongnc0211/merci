@@ -50,6 +50,6 @@ class Admin::PostsController < Admin::BaseController
   end
 
   def post
-    @post = Post.find_by id: params[:id]
+    @post = Post.friendly.find(params[:id])
   end
 end
